@@ -1,6 +1,5 @@
 
 
-import 'package:dshe/CustomWidget/app_bar.dart';
 import 'package:dshe/CustomWidget/custom_text.dart';
 import 'package:dshe/helper/app_color.dart';
 import 'package:flutter/cupertino.dart';
@@ -28,12 +27,21 @@ class _homepageState extends State<homepage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset("image/bangladesh.png",height:AppBar().preferredSize.height-16
-              ,),
-            SizedBox(width: 5,),
+            Image.asset(
+              "image/bangladesh.png",
+              height: AppBar().preferredSize.height - 16,
+            ),
+            const SizedBox(
+              width: 5,
+            ),
             customtxt(txt: "DSHE", fontweight: FontWeight.w700, size: 20.00),
-            SizedBox(width: 3,),
-            customtxt(txt: "(মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর)", fontweight: FontWeight.w400, size: 14.00),
+            const SizedBox(
+              width: 3,
+            ),
+            customtxt(
+                txt: "(মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর)",
+                fontweight: FontWeight.w400,
+                size: 14.00),
           ],
         ),
 
